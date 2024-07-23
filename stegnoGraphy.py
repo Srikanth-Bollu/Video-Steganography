@@ -3,7 +3,6 @@ import cv2
 # from matplotlib import pyplot as plt
 
 valid_frame=0
-# In[2]:
 def msgtobinary(msg):
     if type(msg) == str:
         result= ''.join([ format(ord(i), "08b") for i in msg ])
@@ -20,7 +19,7 @@ def msgtobinary(msg):
     return result
 
 
-# In[8]:
+
 
 
 def KSA(key):
@@ -33,7 +32,7 @@ def KSA(key):
     return S
 
 
-# In[15]:
+
 
 
 def PRGA(S,n):
@@ -50,14 +49,14 @@ def PRGA(S,n):
     return key
 
 
-# In[16]:
+
 
 
 def preparing_key_array(s):
     return [ord(c) for c in s]
 
 
-# In[17]:
+
 
 
 def encryption(plaintext):
@@ -77,7 +76,7 @@ def encryption(plaintext):
     return ctext
 
 
-# In[18]:
+
 
 
 def decryption(ciphertext):
@@ -97,7 +96,7 @@ def decryption(ciphertext):
     return dtext
 
 
-# In[19]:
+
 
 
 def embed(frame):
@@ -131,7 +130,7 @@ def embed(frame):
         return frame
 
 
-# In[20]:
+
 
 
 def extract(frame):
@@ -155,7 +154,7 @@ def extract(frame):
                     return 
 
 
-# In[21]:
+
 
 
 def encode_vid_data():
@@ -195,7 +194,7 @@ def encode_vid_data():
     return frame_
 
 
-# In[22]:
+
 
 
 def decode_vid_data(frame_):
@@ -224,7 +223,7 @@ def decode_vid_data(frame_):
     else:
         print("Invalid frame number. Please enter a valid frame number.")
 
-# In[23]:
+
 
 
 def vid_steg():
@@ -245,7 +244,7 @@ def vid_steg():
         print("\n")
 
 
-# In[24]:
+
 
 
 def main():
@@ -264,11 +263,11 @@ def main():
         print("\n\n")
 
 
-# In[27]:
+
 
 
 if __name__ == "__main__":
     main()
 
 
-# In[ ]:
+
